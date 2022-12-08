@@ -1,21 +1,9 @@
-# AdventOfCode
+# Advent of Code
 
-**TODO: Add description**
+A Repo with all my solutions for [Advent of Code](https://adventofcode.com/).
 
-## Installation
+## 2022
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `advent_of_code` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:advent_of_code, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/advent_of_code>.
-
+| Day               |                01                |
+| :---------------- | :------------------------------: |
+| [Elixir](/elixir) | [⭐calorie_counting⭐](/lib/day1/calorie_counting.ex)
