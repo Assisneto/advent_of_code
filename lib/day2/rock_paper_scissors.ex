@@ -1,11 +1,9 @@
 defmodule Day2.RockPaperScissors do
-  def strategy_guide(input) do
-    input
-    |> String.split("\n")
-    |> calc(0)
-  end
-
-  # def calc([], acc \\ 0)
+  def strategy_guide(input),
+    do:
+      input
+      |> String.split("\n")
+      |> calc(0)
 
   #   a = pedra
   #   b = papel
@@ -19,14 +17,11 @@ defmodule Day2.RockPaperScissors do
     calc(tail, acc + score)
   end
 
-  def calc([], acc) do
-    acc
-  end
+  def calc([], acc), do: acc
 
-  def pair([a, b]) when a == "A" and b == "Y", do: 8
-  # def pair([a, b]) when a == "A" and b == "Z", do: 7
-  def pair([a, b]) when a == "B" and b == "Z", do: 9
-  def pair([a, b]) when a == "C" and b == "X", do: 7
+  def pair(["A", "Y"]), do: 8
+  def pair(["B", "Z"]), do: 9
+  def pair(["C", "X"]), do: 7
 
   def pair([a, b]) do
     mapper = %{
@@ -47,10 +42,4 @@ defmodule Day2.RockPaperScissors do
       mapper1[b]
     end
   end
-
-  #   def pair([_, b]) do
-  # }
-
-  #     mapper[b]
-  #   end
 end
